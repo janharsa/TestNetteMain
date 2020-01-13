@@ -1,9 +1,16 @@
 {
   "name": "jhars/test-nette-main",
   "license": "MIT",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "ssh://git@gitlab.com:22/haxo-cms/haxo-nucleus.git"
+    }
+  ],
   "require": {
     "nette/nette": "^3.0",
-    "jhars/test-nette-package-one": "@dev"
+    "jhars/test-nette-package-one": "@dev",
+    "haxo-cms/haxo-nucleus": "@dev",
   },
   "require-dev": {
     "nette/tester": "^2.0"
@@ -19,6 +26,7 @@
   "config": {
     "preferred-install": {
       "jhars/test-nette-package-one": "source",
+      "haxo-cms/haxo-nucleus": "source",
       "*": "dist"
     }
   },
