@@ -1,21 +1,26 @@
 {
-    "name": "jhars/test-nette-main",
-    "require": {
-        "nette/nette": "^3.0"
-    },
-	"require-dev": {
-		"nette/tester": "^2.0"
-	},
-	"autoload": {
-		"classmap": ["app/Bootstrap.php"]
-	},
-	"scripts": {
-        "webserver": "php -S 127.0.0.1:8000 -t www www/index.php"
-    },
-    "authors": [
-        {
-            "name": "Jan Harsa",
-            "email": "jan.harsa@haxo.cz"
-        }
+  "name": "jhars/test-nette-main",
+  "license": "MIT",
+  "require": {
+    "nette/nette": "^3.0",
+    "jhars/test-nette-package1": "^1.0"
+  },
+  "require-dev": {
+    "nette/tester": "^2.0"
+  },
+  "autoload": {
+    "classmap": [
+      "app/Bootstrap.php"
     ]
+  },
+  "scripts": {
+    "webserver": "php -S 127.0.0.1:8000 -t www www/index.php"
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Jan Harsa",
+      "email": "jan.harsa@haxo.cz"
+    }
+  ]
 }
